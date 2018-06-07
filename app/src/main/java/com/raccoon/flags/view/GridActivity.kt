@@ -1,6 +1,10 @@
 package com.raccoon.flags.view
 
+import android.content.Intent
 import android.content.res.Configuration
+import android.support.v4.app.ActivityCompat
+import android.support.v4.app.ActivityOptionsCompat
+import android.support.v4.util.Pair
 import android.support.v7.widget.DefaultItemAnimator
 import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.Toolbar
@@ -51,8 +55,15 @@ class GridActivity : BaseActivity(), ItemClickListener {
     }
 
     override fun onItemClicked(position: Int, data: DataModel, sharedElement: View) {
-        //FIXME: to do
 
+        val intent = Intent(this, DetailActivity::class.java)
+        intent.putExtra(DetailActivity.codeKey, data.alpha3Code)
+
+        val activityOptions = ActivityOptionsCompat.makeSceneTransitionAnimation(
+                this,
+                Pair(sharedElement.findViewById(R.id.image_flag), DetailActivity.viewNameHeaderImage))
+
+        ActivityCompat.startActivity(this, intent, activityOptions.toBundle())
     }
 
 }
