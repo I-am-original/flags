@@ -11,6 +11,10 @@ import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_details.*
 import javax.inject.Inject
 
+/**
+ * Activity with collapsing toolbar with flag image and country name
+ * Contains recycler view with some information about country
+ */
 class DetailActivity : BaseActivity() {
     override var layoutResource = R.layout.activity_details
 

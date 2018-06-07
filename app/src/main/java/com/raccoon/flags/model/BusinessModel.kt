@@ -4,6 +4,9 @@ import com.raccoon.flags.repository.Repository
 import javax.inject.Inject
 import javax.inject.Singleton
 
+/**
+ * Business logic part
+ */
 @Singleton
 class BusinessModel
 @Inject

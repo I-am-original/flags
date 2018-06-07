@@ -3,6 +3,13 @@ package com.raccoon.flags.api
 import android.util.SparseArray
 import com.raccoon.flags.R
 
+/**
+ * Class with all need data models
+ */
+
+/**
+ * Main, more extended data model represents all country info
+ */
 data class DataModel(val name: String, val topLevelDomain: List<String>? = null, val alpha2Code: String, val alpha3Code: String,
                      val callingCodes: List<String>? = null, val capital: String, val altSpellings: List<String>? = null,
                      val region: String, val subregion: String, val population: Int, val latlng: List<Double>? = null,
@@ -58,4 +65,7 @@ data class Translations(private val de: String, private val es: String, private 
 
 }
 
+/**
+ * Simplified data model for proper displaying by adapter in detailed activity
+ */
 data class DetailedModel(val header: Pair<String, String>, val content: SparseArray<String>)

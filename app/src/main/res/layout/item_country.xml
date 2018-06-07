@@ -24,6 +24,7 @@
         android:layout_gravity="bottom"
         android:background="@drawable/title_gradient"
         android:padding="@dimen/text_padding"
+        android:textColor="@android:color/white"
         android:textStyle="bold"
         tools:text="Country Name" />
 

@@ -8,6 +8,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import com.raccoon.flags.R
 
+/**
+ * Adapter for Recycler View with information about selected by flag country
+ */
 class DetailsAdapter : RecyclerView.Adapter<DetailsAdapter.ItemViewHolder>() {
 
     private var items: SparseArray<String>? = null

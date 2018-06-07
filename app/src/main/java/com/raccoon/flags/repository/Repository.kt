@@ -8,11 +8,15 @@ import io.reactivex.subjects.BehaviorSubject
 import javax.inject.Inject
 import javax.inject.Singleton
 
+/**
+ * Single responsibility class for requesting data via REST API and holding it
+ */
 @Singleton
 class Repository
 @Inject
 constructor(private val apiService: ApiService, private val schedulers: ISchedulers) {
 
+    // Serve as holder of data
     private val subject: BehaviorSubject<List<DataModel>> = BehaviorSubject.create()
 
     init {

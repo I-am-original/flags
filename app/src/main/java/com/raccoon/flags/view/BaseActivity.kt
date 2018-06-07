@@ -8,8 +8,13 @@ import android.widget.Toast.LENGTH_SHORT
 import com.raccoon.flags.R
 import dagger.android.AndroidInjection
 
+/**
+ * Base activity with base functionality and base DI stuff
+ * No sense to use DaggerAppCompatActivity - because of a lot of useless dependencies
+ */
 abstract class BaseActivity : AppCompatActivity() {
 
+    // reference to layout resource, should be defined in each activity
     abstract val layoutResource: Int
 
     override fun onCreate(savedInstanceState: Bundle?) {

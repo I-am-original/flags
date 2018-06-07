@@ -17,6 +17,9 @@ import com.raccoon.flags.viewmodel.GridViewModel
 import kotlinx.android.synthetic.main.activity_grid.*
 import javax.inject.Inject
 
+/**
+ * Activity with configurable grid of all loaded countries
+ */
 class GridActivity : BaseActivity(), ItemClickListener {
 
     override val layoutResource = R.layout.activity_grid
@@ -54,6 +57,9 @@ class GridActivity : BaseActivity(), ItemClickListener {
                 )
     }
 
+    /*
+     * Item click with animated start of next activity
+     */
     override fun onItemClicked(position: Int, data: DataModel, sharedElement: View) {
 
         val intent = Intent(this, DetailActivity::class.java)

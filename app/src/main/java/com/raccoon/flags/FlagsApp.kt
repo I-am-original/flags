@@ -8,6 +8,9 @@ import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasActivityInjector
 import javax.inject.Inject
 
+/**
+ * Application class with Dependency Injection base
+ */
 class FlagsApp : Application(), HasActivityInjector {
 
     @Inject

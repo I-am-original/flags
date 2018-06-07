@@ -10,7 +10,10 @@ import com.raccoon.flags.R
 import com.raccoon.flags.api.DataModel
 import com.squareup.picasso.Picasso
 
-
+/**
+ * Adapter for RecyclerView in main GridActivity
+ * Represents data as cardViews with flag and name
+ */
 class GridAdapter(private val clickListener: ItemClickListener) : RecyclerView.Adapter<GridAdapter.ItemViewHolder>() {
 
     private val countriesList: MutableList<DataModel> = ArrayList()
