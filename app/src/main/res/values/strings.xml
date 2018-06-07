@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Flags</string>
+    <string name="flag_description">This is country flag</string>
+
+    <string name="country_name">Country name</string>
+    <string name="country_native_name">Native name</string>
+    <string name="country_codes">Country codes</string>
+    <string name="country_capital">Capital</string>
+    <string name="country_population">Population</string>
+    <string name="country_languages">Languages</string>
+    <string name="country_currencies">Currencies</string>
+    <string name="country_translations">Translations</string>
+
 </resources>
