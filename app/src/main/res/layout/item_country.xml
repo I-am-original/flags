@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/grid_flag_height"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/card_view_margin"
+    card_view:cardCornerRadius="@dimen/card_view_corner">
+
+    <ImageView
+        android:id="@+id/image_flag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/flag_description"
+        android:scaleType="centerCrop"
+        tools:src="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/title_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/title_gradient"
+        android:padding="@dimen/text_padding"
+        android:textStyle="bold"
+        tools:text="Country Name" />
+
+</android.support.v7.widget.CardView>

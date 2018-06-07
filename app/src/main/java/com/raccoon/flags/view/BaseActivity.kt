@@ -16,6 +16,18 @@ abstract class BaseActivity : AppCompatActivity() {
         AndroidInjection.inject(this)
         super.onCreate(savedInstanceState)
         setContentView(layoutResource)
+        setUpToolbar(findViewById(R.id.toolbar))
+        setUpRecyclerView()
+        requestData()
     }
 
+    abstract fun setUpToolbar(toolbar: Toolbar)
+
+    abstract fun setUpRecyclerView()
+
+    abstract fun requestData()
+
+    protected fun showError(throwable: Throwable) {
+        Snackbar.make(findViewById(android.R.id.content), throwable.localizedMessage, LENGTH_SHORT).show()
+    }
 }

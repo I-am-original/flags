@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="detail_flag_height">256dp</dimen>
+    <dimen name="grid_flag_height">128dp</dimen>
+    <dimen name="card_view_margin">5dp</dimen>
+    <dimen name="card_view_corner">4dp</dimen>
+    <dimen name="text_padding">5dp</dimen>
+
+</resources>
