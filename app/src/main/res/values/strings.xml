@@ -7,6 +7,7 @@
     <string name="country_codes">Country codes</string>
     <string name="country_capital">Capital</string>
     <string name="country_population">Population</string>
+    <string name="country_area">Area</string>
     <string name="country_languages">Languages</string>
     <string name="country_currencies">Currencies</string>
     <string name="country_translations">Translations</string>

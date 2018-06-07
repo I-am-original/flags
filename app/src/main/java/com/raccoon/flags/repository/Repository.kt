@@ -1,6 +1,5 @@
 package com.raccoon.flags.repository
 
-import android.util.Log
 import com.raccoon.flags.api.ApiService
 import com.raccoon.flags.api.DataModel
 import com.raccoon.flags.schedulers.ISchedulers
@@ -14,8 +13,6 @@ class Repository
 @Inject
 constructor(private val apiService: ApiService, private val schedulers: ISchedulers) {
 
-    private val tag = javaClass.simpleName
-
     private val subject: BehaviorSubject<List<DataModel>> = BehaviorSubject.create()
 
     init {
@@ -28,8 +25,6 @@ constructor(private val apiService: ApiService, private val schedulers: ISchedul
         apiService.countriesList()
                 .subscribeOn(schedulers.io())
                 .observeOn(schedulers.main())
-                .doOnError { Log.e(tag, it.localizedMessage) }
-                .doOnNext { Log.d(tag, it.toString()) }
                 .subscribe { subject.onNext(it) }
     }
 

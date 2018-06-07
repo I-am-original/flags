@@ -1,5 +1,6 @@
-package com.raccoon.flags.schedulers
+package com.raccoon.flags
 
+import com.raccoon.flags.schedulers.ISchedulers
 import io.reactivex.Scheduler
 import io.reactivex.schedulers.Schedulers
 

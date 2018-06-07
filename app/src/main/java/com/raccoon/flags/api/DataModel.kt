@@ -17,6 +17,7 @@ data class DataModel(val name: String, val topLevelDomain: List<String>? = null,
         val resultMap: SparseArray<String> = SparseArray()
         resultMap.append(R.string.country_native_name, nativeName)
         resultMap.append(R.string.country_population, population.toString())
+        resultMap.append(R.string.country_area, area.toString())
         resultMap.append(R.string.country_capital, capital)
         resultMap.append(R.string.country_codes, "$alpha2Code ($alpha3Code)")
         resultMap.append(R.string.country_languages, toString(languages))
