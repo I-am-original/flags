@@ -33,7 +33,6 @@ class GridActivity : BaseActivity(), ItemClickListener {
         setSupportActionBar(toolbar)
         toolbar.setTitle(R.string.app_name)
         toolbar.setBackgroundColor(resources.getColor(R.color.colorPrimary))
-        toolbar.setTitleTextColor(resources.getColor(android.R.color.white))
     }
 
     override fun setUpRecyclerView() {

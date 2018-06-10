@@ -12,5 +12,6 @@
     <string name="country_languages">Languages</string>
     <string name="country_currencies">Currencies</string>
     <string name="country_translations">Translations</string>
+    <string name="search">Search</string>
 
 </resources>

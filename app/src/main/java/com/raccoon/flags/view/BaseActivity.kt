@@ -21,7 +21,7 @@ abstract class BaseActivity : AppCompatActivity() {
         AndroidInjection.inject(this)
         super.onCreate(savedInstanceState)
         setContentView(layoutResource)
-        setUpToolbar(findViewById(R.id.toolbar))
+        findViewById<Toolbar>(R.id.toolbar)?.let { setUpToolbar(it) }
         setUpRecyclerView()
         requestData()
     }

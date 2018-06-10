@@ -16,6 +16,6 @@ constructor(private val model: BusinessModel) : ViewModel() {
                     .map { convertToPresentableData(it) }
 
     private fun convertToPresentableData(countryData: DataModel): DetailedModel =
-            DetailedModel(Pair(countryData.name, countryData.getFlagUri()), countryData.toMapOfData())
+            DetailedModel(countryData.name to countryData.getFlagUri(), countryData.toMapOfData())
 
 }

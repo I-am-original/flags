@@ -34,8 +34,6 @@ class GridAdapter(private val clickListener: ItemClickListener) : RecyclerView.A
         holder.title.text = countryData.name
         Picasso.get().load(countryData.getFlagUri()).into(holder.image)
 
-        // ViewCompat.setTransitionName(holder.animalImageView, animalItem.name);
-
         holder.itemView.setOnClickListener { clickListener.onItemClicked(holder.adapterPosition, countryData, holder.itemView) }
     }
 

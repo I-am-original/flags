@@ -17,13 +17,11 @@ class Repository
 constructor(private val apiService: ApiService, private val schedulers: ISchedulers) {
 
     // Serve as holder of data
-    private val subject: BehaviorSubject<List<DataModel>> = BehaviorSubject.create()
+    val subject: BehaviorSubject<List<DataModel>> = BehaviorSubject.create()
 
     init {
         getCountries()
     }
-
-    fun getCountriesList(): Observable<List<DataModel>> = subject
 
     private fun getCountries() {
         apiService.countriesList()
