@@ -45,7 +45,7 @@ class ExampleUnitTest {
         val observer = TestObserver<List<DataModel>>()
 
         // Action
-        repository.getCountriesList().subscribe(observer)
+        repository.subject.subscribe(observer)
 
         // Assert
         observer.assertNoErrors()

@@ -1,6 +1,6 @@
 package com.raccoon.flags.api
 
-import io.reactivex.Observable
+import io.reactivex.Single
 import retrofit2.http.GET
 
 /**
@@ -13,6 +13,6 @@ interface ApiService {
     }
 
     @GET("all")
-    fun countriesList(): Observable<List<DataModel>>
+    fun countriesList(): Single<List<DataModel>>
 
 }
